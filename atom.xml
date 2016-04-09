@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lanseyege.github.io/"/>
-  <updated>2016-04-09T05:18:39.220Z</updated>
+  <updated>2016-04-09T05:33:47.759Z</updated>
   <id>http://lanseyege.github.io/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>core dump</title>
+    <title>how to use core dump file in gdb</title>
     <link href="http://lanseyege.github.io/2016/04/09/Record/"/>
     <id>http://lanseyege.github.io/2016/04/09/Record/</id>
     <published>2016-04-09T03:32:29.000Z</published>
-    <updated>2016-04-09T05:18:39.220Z</updated>
+    <updated>2016-04-09T05:33:47.759Z</updated>
     
-    <content type="html">&lt;p&gt;##core dump in c&lt;br&gt;  The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to find out the debug, maybe the vector over flow, or maybe you don’t initialize a variable. &lt;/p&gt;
+    <content type="html">&lt;p&gt;  The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to find out the debug, maybe the vector over flow, or maybe you don’t initialize a variable. &lt;/p&gt;
 &lt;p&gt;  One way is gdb. Well, if your code is complex enough, such as many loop with large iterations, this is not easy to debug with gdb. &lt;/p&gt;
 &lt;p&gt;  Another way is gdb(hehe), with core dump file. If you want to generate core dump file when your code exits abnormally, just use this command in command line:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;gt;$ulimit -c filesize
@@ -38,7 +38,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;##core dump in c&lt;br&gt;  The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other languag
+      &lt;p&gt;  The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to fin
     
     </summary>
     
