@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>explosive the world!!</title>
+  <subtitle>We are coming~~</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://load.github.io/"/>
+  <link href="http://lanseyege.github.io/"/>
   <updated>2016-04-09T05:18:39.220Z</updated>
-  <id>http://load.github.io/</id>
+  <id>http://lanseyege.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>lanseyege</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>core dump</title>
-    <link href="http://load.github.io/2016/04/09/Record/"/>
-    <id>http://load.github.io/2016/04/09/Record/</id>
+    <link href="http://lanseyege.github.io/2016/04/09/Record/"/>
+    <id>http://lanseyege.github.io/2016/04/09/Record/</id>
     <published>2016-04-09T03:32:29.000Z</published>
     <updated>2016-04-09T05:18:39.220Z</updated>
     
@@ -43,14 +43,14 @@
     </summary>
     
     
-      <category term="linux c" scheme="http://load.github.io/tags/linux-c/"/>
+      <category term="linux c" scheme="http://lanseyege.github.io/tags/linux-c/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://load.github.io/2016/04/08/hello-world/"/>
-    <id>http://load.github.io/2016/04/08/hello-world/</id>
+    <link href="http://lanseyege.github.io/2016/04/08/hello-world/"/>
+    <id>http://lanseyege.github.io/2016/04/08/hello-world/</id>
     <published>2016-04-08T12:23:04.760Z</published>
     <updated>2016-04-08T12:23:04.760Z</updated>
     
