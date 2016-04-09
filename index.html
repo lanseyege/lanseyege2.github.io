@@ -86,24 +86,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#core dump in c<br>    The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to find out the debug, maybe the vector over flow, or maybe you don’t initialize a variable.<br>    One way is gdb. Well, if your code is complex enough, such as many loop with large iterations, this is not easy to debug with gdb.<br>    Another way is gdb(hehe), with core dump file. If you want to generate core dump file when your code exits abnormally, just use this command in command line:</p>
+        <p>##core dump in c<br>  The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to find out the debug, maybe the vector over flow, or maybe you don’t initialize a variable. </p>
+<p>  One way is gdb. Well, if your code is complex enough, such as many loop with large iterations, this is not easy to debug with gdb. </p>
+<p>  Another way is gdb(hehe), with core dump file. If you want to generate core dump file when your code exits abnormally, just use this command in command line:</p>
 <pre><code>&gt;$ulimit -c filesize
-the filesize is KB based, if the core dump file your code generates is very large, the filesize must be set larger than it, or the core dump file would generate.
-How to use it? It easy, just type in command line
-&gt;$gdb yourexefile core.***
-then, you can type &apos;bt&apos; to backtrace the bugs, or &apos;print variable&apos; to check out the variable, or &apos;info locals&apos; to list all local variables.
-If you want to check the vectors , just do this:
-&gt;$p *vec@len
-len is the length you want to check in a vector
+</code></pre><p>  the filesize is KB based, if the core dump file your code generates is very large, the filesize must be set larger than it, or the core dump file would generate.<br>  How to use it? It easy, just type in command line</p>
+<pre><code>&gt;$gdb yourexefile core.***
+</code></pre><p>  then, you can type ‘bt’ to backtrace the bugs, or ‘print variable’ to check out the variable, or ‘info locals’ to list all local variables.<br>  If you want to check the vectors , just do this:</p>
+<pre><code>&gt;$p *vec@len
+</code></pre><p>  len is the length you want to check in a vector</p>
+<p>  If you want to close core dump file, just</p>
+<pre><code>&gt;$ulimit -c 0
+</code></pre><p>  That’s OK!</p>
 
-If you want to close core dump file, just
-&gt;$ulimit -c 0
-That&apos;s OK!
-</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://load.github.io/2016/04/09/Record/" data-id="cimsobo1f0000bciwhg8t9iqa" class="article-share-link">Share</a>
+      <a data-url="http://load.github.io/2016/04/09/Record/" data-id="cimsoyc9r00013ciwiudwl387" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-c/">linux c</a></li></ul>
@@ -150,7 +149,7 @@ That&apos;s OK!
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://load.github.io/2016/04/08/hello-world/" data-id="cimsobo2c0003bciwjtt6drls" class="article-share-link">Share</a>
+      <a data-url="http://load.github.io/2016/04/08/hello-world/" data-id="cimsoyc9k00003ciwuv4l109d" class="article-share-link">Share</a>
       
       
     </footer>
