@@ -64,6 +64,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Record" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/09/Record/" class="article-date">
+  <time datetime="2016-04-09T03:32:29.000Z" itemprop="datePublished">2016-04-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/09/Record/">core dump</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#core dump in c<br>    The core dump problem is very annoying in c, espacially in excutable prongram. Not as same as java or other language, it is hard to find out the debug, maybe the vector over flow, or maybe you don’t initialize a variable.<br>    One way is gdb. Well, if your code is complex enough, such as many loop with large iterations, this is not easy to debug with gdb.<br>    Another way is gdb(hehe), with core dump file. If you want to generate core dump file when your code exits abnormally, just use this command in command line:</p>
+<pre><code>&gt;$ulimit -c filesize
+the filesize is KB based, if the core dump file your code generates is very large, the filesize must be set larger than it, or the core dump file would generate.
+How to use it? It easy, just type in command line
+&gt;$gdb yourexefile core.***
+then, you can type &apos;bt&apos; to backtrace the bugs, or &apos;print variable&apos; to check out the variable, or &apos;info locals&apos; to list all local variables.
+If you want to check the vectors , just do this:
+&gt;$p *vec@len
+len is the length you want to check in a vector
+
+If you want to close core dump file, just
+&gt;$ulimit -c 0
+That&apos;s OK!
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://load.github.io/2016/04/09/Record/" data-id="cimsobo1f0000bciwhg8t9iqa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-c/">linux c</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/08/hello-world/" class="article-date">
@@ -99,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://load.github.io/2016/04/08/hello-world/" data-id="cimrw7mf800006kiwmvojybpd" class="article-share-link">Share</a>
+      <a data-url="http://load.github.io/2016/04/08/hello-world/" data-id="cimsobo2c0003bciwjtt6drls" class="article-share-link">Share</a>
       
       
     </footer>
@@ -118,9 +169,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-c/">linux c</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/linux-c/" style="font-size: 10px;">linux c</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -137,6 +202,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/04/09/Record/">core dump</a>
+          </li>
         
           <li>
             <a href="/2016/04/08/hello-world/">Hello World</a>
